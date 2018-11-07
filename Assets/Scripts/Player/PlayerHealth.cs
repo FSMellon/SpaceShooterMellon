@@ -8,7 +8,6 @@ public class PlayerHealth : MonoBehaviour
     //as well as creating game objects for the damaged ship graphic and the sound effect for dying.
     public float iframes;
     public GameObject DamageShip;
-    public GameObject DeathSound;
     private bool invincible = false;
 
 
@@ -68,7 +67,6 @@ public class PlayerHealth : MonoBehaviour
         shield3.SetActive(false);
         shield4.SetActive(false);
         isDead = true;
-        DeathSound.SetActive(true);
         Destroy(gameObject);
     }
     

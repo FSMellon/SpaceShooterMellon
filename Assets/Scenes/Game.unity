@@ -575,6 +575,7 @@ GameObject:
   m_Component:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
+  - component: {fileID: 519420035}
   - component: {fileID: 519420030}
   - component: {fileID: 519420029}
   - component: {fileID: 519420034}
@@ -685,7 +686,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 112815930b0a7c04493d6c7dd9f58dd0, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.5
+  m_Volume: 0.25
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -769,6 +770,17 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &519420035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e00f60f076925d04ca1b26ddf992eaa0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &523839713
 GameObject:
   m_ObjectHideFlags: 0
@@ -1208,6 +1220,77 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 755752641}
   m_CullTransparentMesh: 0
+--- !u!1001 &781282250
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4755017152302220, guid: 2bde13c91569b0345bcff3546ec2dfe0, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -0.3855
+      objectReference: {fileID: 0}
+    - target: {fileID: 4755017152302220, guid: 2bde13c91569b0345bcff3546ec2dfe0, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.028
+      objectReference: {fileID: 0}
+    - target: {fileID: 4755017152302220, guid: 2bde13c91569b0345bcff3546ec2dfe0, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4755017152302220, guid: 2bde13c91569b0345bcff3546ec2dfe0, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4755017152302220, guid: 2bde13c91569b0345bcff3546ec2dfe0, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4755017152302220, guid: 2bde13c91569b0345bcff3546ec2dfe0, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4755017152302220, guid: 2bde13c91569b0345bcff3546ec2dfe0, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4755017152302220, guid: 2bde13c91569b0345bcff3546ec2dfe0, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114075763519741722, guid: 2bde13c91569b0345bcff3546ec2dfe0,
+        type: 2}
+      propertyPath: DeathSound
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114075763519741722, guid: 2bde13c91569b0345bcff3546ec2dfe0,
+        type: 2}
+      propertyPath: shield1
+      value: 
+      objectReference: {fileID: 1386506722}
+    - target: {fileID: 114075763519741722, guid: 2bde13c91569b0345bcff3546ec2dfe0,
+        type: 2}
+      propertyPath: shield2
+      value: 
+      objectReference: {fileID: 1199614233}
+    - target: {fileID: 114075763519741722, guid: 2bde13c91569b0345bcff3546ec2dfe0,
+        type: 2}
+      propertyPath: shield3
+      value: 
+      objectReference: {fileID: 578531095}
+    - target: {fileID: 114075763519741722, guid: 2bde13c91569b0345bcff3546ec2dfe0,
+        type: 2}
+      propertyPath: shield4
+      value: 
+      objectReference: {fileID: 1920543565}
+    - target: {fileID: 1144495196548674, guid: 2bde13c91569b0345bcff3546ec2dfe0, type: 2}
+      propertyPath: m_Name
+      value: Player (Spaceship)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2bde13c91569b0345bcff3546ec2dfe0, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &1198311585
 GameObject:
   m_ObjectHideFlags: 0
@@ -1603,72 +1686,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9106231, y: 1}
   m_EdgeRadius: 0
---- !u!1001 &1496778609
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4755017152302220, guid: 2bde13c91569b0345bcff3546ec2dfe0, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -0.3855
-      objectReference: {fileID: 0}
-    - target: {fileID: 4755017152302220, guid: 2bde13c91569b0345bcff3546ec2dfe0, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -0.028
-      objectReference: {fileID: 0}
-    - target: {fileID: 4755017152302220, guid: 2bde13c91569b0345bcff3546ec2dfe0, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4755017152302220, guid: 2bde13c91569b0345bcff3546ec2dfe0, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4755017152302220, guid: 2bde13c91569b0345bcff3546ec2dfe0, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4755017152302220, guid: 2bde13c91569b0345bcff3546ec2dfe0, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4755017152302220, guid: 2bde13c91569b0345bcff3546ec2dfe0, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4755017152302220, guid: 2bde13c91569b0345bcff3546ec2dfe0, type: 2}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114075763519741722, guid: 2bde13c91569b0345bcff3546ec2dfe0,
-        type: 2}
-      propertyPath: shield1
-      value: 
-      objectReference: {fileID: 1386506722}
-    - target: {fileID: 114075763519741722, guid: 2bde13c91569b0345bcff3546ec2dfe0,
-        type: 2}
-      propertyPath: shield2
-      value: 
-      objectReference: {fileID: 1199614233}
-    - target: {fileID: 114075763519741722, guid: 2bde13c91569b0345bcff3546ec2dfe0,
-        type: 2}
-      propertyPath: shield3
-      value: 
-      objectReference: {fileID: 578531095}
-    - target: {fileID: 114075763519741722, guid: 2bde13c91569b0345bcff3546ec2dfe0,
-        type: 2}
-      propertyPath: shield4
-      value: 
-      objectReference: {fileID: 1920543565}
-    - target: {fileID: 1144495196548674, guid: 2bde13c91569b0345bcff3546ec2dfe0, type: 2}
-      propertyPath: m_Name
-      value: Player (Spaceship)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 2bde13c91569b0345bcff3546ec2dfe0, type: 2}
-  m_IsPrefabAsset: 0
 --- !u!1 &1613448094
 GameObject:
   m_ObjectHideFlags: 0
