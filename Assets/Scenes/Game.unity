@@ -686,7 +686,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 112815930b0a7c04493d6c7dd9f58dd0, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.25
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1258,11 +1258,6 @@ Prefab:
     - target: {fileID: 4755017152302220, guid: 2bde13c91569b0345bcff3546ec2dfe0, type: 2}
       propertyPath: m_RootOrder
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114075763519741722, guid: 2bde13c91569b0345bcff3546ec2dfe0,
-        type: 2}
-      propertyPath: DeathSound
-      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 114075763519741722, guid: 2bde13c91569b0345bcff3546ec2dfe0,
         type: 2}
