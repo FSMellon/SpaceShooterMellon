@@ -14,6 +14,8 @@ public class GameOver : MonoBehaviour
     public GameObject GameOverText;
     public GameObject FinalScoreText;
     public GameObject FinalDangerText;
+    //Explosion sound for the player dying
+    public GameObject PlayerExplodes;
 
     private void Awake()
     {
@@ -27,6 +29,7 @@ public class GameOver : MonoBehaviour
         {
             //If the player IS dead, the UI will change accordingly.
             ChangeUI();
+            PlayerExplodes.SetActive(true);
 
             //Reloads the game if the player presses Fire.
             if (Input.GetButtonDown("Fire1"))
@@ -41,6 +44,7 @@ public class GameOver : MonoBehaviour
     {
         //Changes back the isDead bool to state that the player is alive again, then changes the UI accordingly.
         PlayerHealth.isDead = false;
+        PlayerExplodes.SetActive(false);
         ChangeUI();
         //Gets the active scene number from the build index, then loads said scene from the top.
         int scene = SceneManager.GetActiveScene().buildIndex;
