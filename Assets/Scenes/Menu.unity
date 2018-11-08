@@ -1435,7 +1435,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Move with WASD/Arrows
 
-    Fire by holding P/Z
+    Fire by holding J/Z
 
     Exit the game with ESC'
 --- !u!222 &1312641797
