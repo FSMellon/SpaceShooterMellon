@@ -3,22 +3,24 @@ using System.Collections.Generic;
 using UnityEngine;
 
 //Contains all the code found in Enemy due to being a child of said script.
-public class WaveMovement : Enemy
+public class WaveMovement : SimpleEnemy
 {
 
     //Variables that can be freely adjusted in the editor to decide how large the curves in the enemy's movement should be.
+    [SerializeField]
     [Range(0f, 10f)]
-    public float BigWave, fastWave;
+    protected float BigWave, fastWave;
     float spawnTime;
 
-    private void Start()
+    protected override void Start()
     {
+        base.Start();
         spawnTime = Time.time - Random.Range(-1f, 1f);        
     }
 
     //An overriding movement script that causes the attached object to move in a wave pattern.
     protected override void Movement()
     {
-        transform.position = new Vector2(transform.position.x - speed, Mathf.Sin(Time.time - spawnTime * fastWave) * BigWave);
+        transform.position = new Vector2(transform.position.x - moveSpeed, Mathf.Sin(Time.time - spawnTime * fastWave) * BigWave);
     }
 }

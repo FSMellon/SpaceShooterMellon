@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4788310968063568}
   - component: {fileID: 212036799914547916}
-  - component: {fileID: 114318158675579692}
+  - component: {fileID: 114805294113245264}
   - component: {fileID: 114415159183992450}
   - component: {fileID: 50201819301116428}
   - component: {fileID: 61275509123258444}
@@ -89,18 +89,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.041666668, y: 0.041666668}
   m_EdgeRadius: 0
---- !u!114 &114318158675579692
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1627349023280700}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c6d81fa7549ee048b4eb52b1fe44c98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0.01
 --- !u!114 &114415159183992450
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -112,10 +100,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b872dca8bf96e544a6db9c357f16911, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shotSpark: {fileID: 0}
+  explosion: {fileID: 1290031464295566, guid: 9be6ca1313c522c40858cf5f7331d1f7, type: 2}
+--- !u!114 &114805294113245264
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1627349023280700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c6d81fa7549ee048b4eb52b1fe44c98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 0.008
   hp: 1
   scoreValue: 50
-  shotSpark: {fileID: 0}
-  boom: {fileID: 1290031464295566, guid: 9be6ca1313c522c40858cf5f7331d1f7, type: 2}
 --- !u!212 &212036799914547916
 SpriteRenderer:
   m_ObjectHideFlags: 1

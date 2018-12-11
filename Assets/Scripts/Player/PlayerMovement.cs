@@ -7,18 +7,19 @@ public class PlayerMovement : MonoBehaviour
 {
     Rigidbody2D rb2D;
 
-    private float x;
-    private float y;
-
-    //private bool isBoosting;
-    //private bool isReversing;
+    //Variables used to regulate the player's movement and speed
+    private float x, y;
+    
 
     private bool isFiring;
     private float cooldown;
-    public GameObject Thrust;
-    public GameObject Reverse;
+    [SerializeField]
+    private GameObject Thrust, Reverse, shot;
+    public Transform shotSpawn;
+
     private float violentThrust = 0.1f;
 
+    
     [Range(0f, 2f)]
     public float xspeed;
     [Range(0f, 2f)]
@@ -32,9 +33,7 @@ public class PlayerMovement : MonoBehaviour
 
     [Range(0f, 2f)]
     public float fireRate;
-
-    public GameObject shot;
-    public Transform shotSpawn;
+    
 
     // Use this for initialization
     void Start()

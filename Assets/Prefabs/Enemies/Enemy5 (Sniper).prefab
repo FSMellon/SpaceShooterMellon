@@ -36,7 +36,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4493255724283340}
   - component: {fileID: 212938087685781020}
-  - component: {fileID: 114033610359254868}
+  - component: {fileID: 114907545380648898}
+  - component: {fileID: 114407492650628508}
   - component: {fileID: 114140261699232560}
   - component: {fileID: 50028964525035732}
   - component: {fileID: 61757123579894350}
@@ -148,25 +149,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.033513784, y: 0.033517405}
   m_EdgeRadius: 0
---- !u!114 &114033610359254868
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1307077241525632}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d13aab6553cc0b540a675fbb9131865b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0.004
-  BigWave: 0.065
-  fastWave: 10
-  shot: {fileID: 1566942921467130, guid: 94d6f71414b0ac1409ffd1f4604621e5, type: 2}
-  shotSpawn: {fileID: 4511680246373710}
-  fireRate: 1.7
-  canShoot: 1
-  firstShot: 1
 --- !u!114 &114140261699232560
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -178,10 +160,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b872dca8bf96e544a6db9c357f16911, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 8
-  scoreValue: 250
   shotSpark: {fileID: 1306383861115452}
-  boom: {fileID: 1849427325071588, guid: bd8e463fd4900034681977c040088cf9, type: 2}
+  explosion: {fileID: 1849427325071588, guid: bd8e463fd4900034681977c040088cf9, type: 2}
+--- !u!114 &114407492650628508
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1307077241525632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4182d447d62b0bf49bcec566933e1148, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shot: {fileID: 1566942921467130, guid: 94d6f71414b0ac1409ffd1f4604621e5, type: 2}
+  shotSpawn: {fileID: 4511680246373710}
+  fireRate: 2
+  canShoot: 1
+  firstShot: 1
+--- !u!114 &114907545380648898
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1307077241525632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e684b0fc07b7d54189aed18cccd72ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 0.0015
+  hp: 7
+  scoreValue: 250
+  BigWave: 0.065
+  fastWave: 10
 --- !u!212 &212838919445099738
 SpriteRenderer:
   m_ObjectHideFlags: 1

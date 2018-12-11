@@ -4,22 +4,20 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
-
     public GameObject[] enemylist;
 
     Vector2 spawnPoint;
-
-   
+  
     [Space]
-
-
     float spawnrate = 2f;
     float rand;
     float nextspawn;
     int difficulty = 1000;
 
-    public float randRange1 = 4;
-    public float randRange2 = -4;
+    [SerializeField]
+    float randRange1;
+    [SerializeField]
+    float randRange2;
 
     void Update()
     {

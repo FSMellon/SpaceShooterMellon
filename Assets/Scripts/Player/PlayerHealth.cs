@@ -6,17 +6,17 @@ public class PlayerHealth : MonoBehaviour
 {
     //Creates a publically adjustable float for how long the invincibility duration should be,
     //as well as creating game objects for the damaged ship graphic and the sound effect for dying.
-    public float iframes;
-    public GameObject DamageShip;
-    public GameObject DeathSound;
+    [SerializeField]
+    float iframes;
+    [SerializeField]
+    GameObject DamageShip, DeathSound;
     private bool invincible = false;
 
 
     //Makes the three pieces of the health bar individual game objects accessible through the code.
-    public GameObject shield1;
-    public GameObject shield2;
-    public GameObject shield3;
-    public GameObject shield4;
+    [SerializeField]
+    GameObject shield1, shield2, shield3, shield4;
+
 
     private int shieldCount = 4;
 

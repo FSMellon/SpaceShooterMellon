@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
 
-public class FinalDanger : DangerLevel
+public class FinalDangerLevel : DangerLevel
 {
     //Connects the field Text to the Text-component attached to the GameObject.
     Text FinalText;

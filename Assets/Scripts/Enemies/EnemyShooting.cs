@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-//Contains all the code found in WaveMovement and Enemy due to this script being a child of WaveMovement, which itself was a child of Enemy.
-public class EnemyShooting : Enemy
+//Contains all the code found in Enemy.
+public class EnemyShooting : MonoBehaviour
 {
     //Declares the GameObject "shot" and the position it will be fired from, as well as public bool known as canShoot to be used as a cooldown.
     public GameObject shot;

@@ -7,13 +7,19 @@ using UnityEngine;
 public class GameOver : MonoBehaviour
 {
     //Declares all parts of the UI that will be hidden upon a Game Over
-    public GameObject ScoreText;
-    public GameObject HealthText;
-    public GameObject DangerText;
+    [SerializeField]
+    GameObject ScoreText;
+    [SerializeField]
+    GameObject HealthText;
+    [SerializeField]
+    GameObject DangerText;
     //Declares all parts of the UI that will appear upon a Game Over
-    public GameObject GameOverText;
-    public GameObject FinalScoreText;
-    public GameObject FinalDangerText;
+    [SerializeField]
+    GameObject GameOverText;
+    [SerializeField]
+    GameObject FinalScoreText;
+    [SerializeField]
+    GameObject FinalDangerText;
 
     private void Awake()
     {

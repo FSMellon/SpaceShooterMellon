@@ -36,6 +36,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4113785739314838}
   - component: {fileID: 212765810720445038}
+  - component: {fileID: 114730672449127352}
   - component: {fileID: 114188841540334950}
   - component: {fileID: 114801794830697756}
   - component: {fileID: 61217621938094356}
@@ -159,12 +160,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4182d447d62b0bf49bcec566933e1148, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.004
   shot: {fileID: 1566942921467130, guid: 94d6f71414b0ac1409ffd1f4604621e5, type: 2}
   shotSpawn: {fileID: 4552043241869228}
   fireRate: 2
   canShoot: 1
   firstShot: 1
+--- !u!114 &114730672449127352
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1395582069403044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c6d81fa7549ee048b4eb52b1fe44c98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 0.0035
+  hp: 11
+  scoreValue: 200
 --- !u!114 &114801794830697756
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -176,10 +190,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b872dca8bf96e544a6db9c357f16911, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 11
-  scoreValue: 200
   shotSpark: {fileID: 1131208320513006}
-  boom: {fileID: 1184677618603214, guid: d92724df0dc316a43823e6820d780a93, type: 2}
+  explosion: {fileID: 1184677618603214, guid: d92724df0dc316a43823e6820d780a93, type: 2}
 --- !u!212 &212765810720445038
 SpriteRenderer:
   m_ObjectHideFlags: 1

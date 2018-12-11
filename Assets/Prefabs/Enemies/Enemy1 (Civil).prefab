@@ -130,10 +130,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b872dca8bf96e544a6db9c357f16911, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 10
-  scoreValue: 100
   shotSpark: {fileID: 1533032461386388}
-  boom: {fileID: 1849427325071588, guid: bd8e463fd4900034681977c040088cf9, type: 2}
+  explosion: {fileID: 1849427325071588, guid: bd8e463fd4900034681977c040088cf9, type: 2}
 --- !u!114 &114561819561311980
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -145,7 +143,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c6d81fa7549ee048b4eb52b1fe44c98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.005
+  moveSpeed: 0.0035
+  hp: 10
+  scoreValue: 100
 --- !u!212 &212621772232486986
 SpriteRenderer:
   m_ObjectHideFlags: 1
