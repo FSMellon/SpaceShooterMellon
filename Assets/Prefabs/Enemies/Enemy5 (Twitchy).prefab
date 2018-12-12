@@ -37,6 +37,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4205484753226026}
   - component: {fileID: 212518336351398444}
+  - component: {fileID: 114081976522135384}
   - component: {fileID: 114892580731506248}
   - component: {fileID: 114240929049434334}
   - component: {fileID: 50080829385489662}
@@ -244,6 +245,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &114081976522135384
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1100526244707068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e684b0fc07b7d54189aed18cccd72ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 0.003
+  hp: 8
+  scoreValue: 250
+  BigWave: 0.065
+  fastWave: 10
 --- !u!114 &114240929049434334
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -255,10 +272,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b872dca8bf96e544a6db9c357f16911, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 8
-  scoreValue: 250
   shotSpark: {fileID: 1098083673163968}
-  boom: {fileID: 1849427325071588, guid: bd8e463fd4900034681977c040088cf9, type: 2}
+  explosion: {fileID: 1849427325071588, guid: bd8e463fd4900034681977c040088cf9, type: 2}
 --- !u!114 &114892580731506248
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -267,15 +282,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1100526244707068}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d13aab6553cc0b540a675fbb9131865b, type: 3}
+  m_Script: {fileID: 11500000, guid: 4182d447d62b0bf49bcec566933e1148, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.004
-  BigWave: 0.065
-  fastWave: 10
   shot: {fileID: 1566942921467130, guid: 94d6f71414b0ac1409ffd1f4604621e5, type: 2}
   shotSpawn: {fileID: 4233607280303268}
-  fireRate: 1.7
+  fireRate: 2.5
   canShoot: 1
   firstShot: 1
 --- !u!212 &212518336351398444

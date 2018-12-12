@@ -9,15 +9,16 @@ public class EnemySpawner : MonoBehaviour
     Vector2 spawnPoint;
   
     [Space]
-    float spawnrate = 2f;
-    float rand;
-    float nextspawn;
-    int difficulty = 1000;
-
     [SerializeField]
     float randRange1;
     [SerializeField]
     float randRange2;
+
+    float spawnrate = 2f;
+    float rand;
+    float nextspawn;
+    int difficulty = 1000;
+    
 
     void Update()
     {
