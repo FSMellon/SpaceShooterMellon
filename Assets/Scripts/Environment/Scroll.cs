@@ -13,8 +13,7 @@ public class Scroll : MonoBehaviour
     {
         mat = GetComponent<Renderer>().material;
 	}
-	
-	
+		
 	void Update ()
     {
         mat.mainTextureOffset = new Vector2(Time.time * ScrollScale, 0);
