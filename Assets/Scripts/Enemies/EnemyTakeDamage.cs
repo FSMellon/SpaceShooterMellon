@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Health : MonoBehaviour
+public class EnemyTakeDamage : MonoBehaviour
 {
     //public int hp;
     //public int scoreValue;
@@ -29,7 +29,7 @@ public class Health : MonoBehaviour
                 enemy.hp -= 1;
                 Destroy(collision.gameObject);
                 shotSpark.SetActive(true);
-                Invoke("removeParticle", 0.1f);
+                StartCoroutine(removeParticle());
             }
             //If the enemy has no health left, the enemy is removed from the game alongside the bullet that destroyed it.
             else if (enemy.hp == 1)
@@ -47,8 +47,9 @@ public class Health : MonoBehaviour
     }
 
     //The function that removes the particle graphic.
-    void removeParticle()
+    IEnumerator removeParticle()
     {
+        yield return null;
         shotSpark.SetActive(false);
     }
 }

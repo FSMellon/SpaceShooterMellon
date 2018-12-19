@@ -4,7 +4,7 @@ using UnityEngine;
 
 public abstract class EnemyBase : MonoBehaviour
 {
-    //Declares the public variable for the enemy's speed, which varies between every enemy in the game.
+    //Declares the public variables for the enemy's speed, health and score, all of which vary between every enemy in the game.
     [SerializeField]
     protected float moveSpeed;
     public int hp, scoreValue;
